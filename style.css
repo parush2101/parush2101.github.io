@@ -155,8 +155,16 @@ a.t.mono:hover { color: var(--accent); text-decoration-color: var(--accent); }
   border: 1px solid var(--line); background: var(--surface); border-radius: 8px;
   padding: 22px 24px; margin-bottom: 16px;
 }
-.pkg h3 { margin: 0; font-family: "Source Code Pro", ui-monospace, monospace; font-size: 20px; }
-.pkg p { margin: 6px 0 14px; color: var(--muted); }
+.pkg h3 { margin: 0; font-size: 21px; }
+.pkg .pkg-title { margin: 6px 0 2px; color: var(--text); font-weight: 500; }
+.pkg .pkg-note { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+.install {
+  display: block; margin: 0 0 16px; padding: 9px 14px; border-radius: 6px;
+  background: var(--bg); border: 1px solid var(--line);
+  font-family: "Source Code Pro", ui-monospace, monospace; font-size: 14px; color: var(--text);
+  overflow-x: auto; white-space: nowrap;
+}
+section .pkg:first-of-type { margin-top: 18px; }
 
 footer.site { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 14px; }
 footer.site .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
