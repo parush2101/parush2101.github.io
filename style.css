@@ -66,30 +66,32 @@ nav a.active { color: var(--text); box-shadow: inset 0 -2px 0 var(--accent); }
 main { padding: 56px 0 72px; }
 
 /* Home */
+.home .wrap { max-width: 1040px; }
 .hero {
-  display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: start;
+  display: grid; grid-template-columns: 280px 1fr; gap: 56px; align-items: center;
+  font-size: 19px;
 }
 .hero img {
-  width: 220px; height: 252px; object-fit: cover; border-radius: 6px;
+  width: 280px; height: 320px; object-fit: cover; border-radius: 8px;
   display: block;
 }
 .hero h1 {
-  font-family: var(--serif); font-weight: 600; font-size: 40px;
-  line-height: 1.15; margin: 0 0 6px;
+  font-family: var(--serif); font-weight: 600; font-size: 50px;
+  line-height: 1.1; margin: 0 0 8px;
 }
-.role { color: var(--muted); margin: 0 0 22px; font-size: 16px; }
+.role { color: var(--muted); margin: 0 0 22px; font-size: 19px; }
 .role strong { color: var(--text); font-weight: 500; }
 .hero p { margin: 0 0 16px; }
 .fields { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 26px; padding: 0; list-style: none; }
 .fields li {
-  font-size: 13.5px; padding: 4px 12px; border-radius: 999px;
+  font-size: 15px; padding: 5px 14px; border-radius: 999px;
   border: 1px solid var(--line); color: var(--muted); font-weight: 500;
 }
 .links { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
-  font-size: 14.5px; font-weight: 500;
-  padding: 8px 16px; border-radius: 6px;
+  font-size: 15.5px; font-weight: 500;
+  padding: 10px 18px; border-radius: 6px;
   border: 1px solid var(--line); background: var(--surface); color: var(--text);
 }
 .btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
@@ -132,6 +134,23 @@ h2::after {
 }
 a.tag:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 
+.home-grid {
+  display: grid; grid-template-columns: 3fr 2fr; gap: 56px;
+  margin-top: 64px; padding-top: 0;
+}
+.home-grid section + section { margin-top: 0; }
+.home-grid h2 { font-size: 22px; }
+.pkgs { list-style: none; margin: 0; padding: 0; }
+.pkgs li { margin: 0 0 14px; line-height: 1.45; }
+.pkgs .co { display: block; color: var(--muted); font-size: 15px; }
+.mono { font-family: "Source Code Pro", ui-monospace, monospace; }
+a.t.mono {
+  color: var(--text); font-weight: 500; text-decoration: underline;
+  text-decoration-color: var(--link-line); text-underline-offset: 3px;
+}
+a.t.mono:hover { color: var(--accent); text-decoration-color: var(--accent); }
+.more { display: inline-block; margin-top: 6px; font-size: 15px; font-weight: 500; }
+
 .pkg {
   border: 1px solid var(--line); background: var(--surface); border-radius: 8px;
   padding: 22px 24px; margin-bottom: 16px;
@@ -148,8 +167,10 @@ footer.site .wrap { display: flex; justify-content: space-between; gap: 16px; fl
   header.site .wrap { height: auto; padding-top: 14px; padding-bottom: 14px; flex-direction: column; align-items: flex-start; gap: 8px; }
   nav { gap: 20px; }
   main { padding: 36px 0 56px; }
-  .hero { grid-template-columns: 1fr; gap: 24px; }
+  .hero { grid-template-columns: 1fr; gap: 24px; font-size: 17px; }
   .hero img { width: 150px; height: 172px; }
-  .hero h1 { font-size: 32px; }
+  .hero h1 { font-size: 34px; }
+  .role { font-size: 17px; }
+  .home-grid { grid-template-columns: 1fr; gap: 40px; margin-top: 48px; }
   h1.page { font-size: 30px; }
 }
