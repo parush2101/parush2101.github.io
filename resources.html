@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources · Parush Arora</title>
+  <meta name="description" content="R packages and student research supervised by Parush Arora.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html">Parush Arora</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a class="active" href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1 class="page">Resources</h1>
+
+      <section id="r-packages">
+        <h2>R Packages</h2>
+        <p class="lede">I am the co-creator of two packages for DiD methods, with others in development. See each package's README for instructions.</p>
+        <div class="pkg">
+          <h3><a class="t mono" href="https://CRAN.R-project.org/package=staggeredGMM">staggeredGMM</a></h3>
+          <p class="pkg-title">GMM Estimation of Treatment Effects Under Staggered Adoption</p>
+          <p class="pkg-note">Companion to <em>Estimating Treatment Effects under Staggered Timing and Non-Spherical Errors</em> (with Rishabh Bijani).</p>
+          <code class="install">install.packages("staggeredGMM")</code>
+          <div class="links">
+            <a class="btn primary" href="https://CRAN.R-project.org/package=staggeredGMM">View on CRAN</a>
+            <a class="btn" href="https://cran.r-project.org/web/packages/staggeredGMM/staggeredGMM.pdf">Reference manual</a>
+          </div>
+        </div>
+        <div class="pkg">
+          <h3><a class="t mono" href="https://CRAN.R-project.org/package=phdid">phdid</a></h3>
+          <p class="pkg-title">Partial Homogeneity in Staggered Difference-in-Differences</p>
+          <p class="pkg-note">Companion to <em>A Bayesian Approach to Partial Homogeneity in Staggered Difference-in-Difference</em> (with Rohan Wagle).</p>
+          <code class="install">install.packages("phdid")</code>
+          <div class="links">
+            <a class="btn primary" href="https://CRAN.R-project.org/package=phdid">View on CRAN</a>
+            <a class="btn" href="https://cran.r-project.org/web/packages/phdid/phdid.pdf">Reference manual</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="student-research">
+        <h2>Student Research</h2>
+        <p class="lede">Work by Ashoka University students written under my supervision.</p>
+        <ul class="papers">
+          <li><a class="t" href="assets/students/patnaik-bk-iv-simulations.pdf">An Introduction to Instrumental Variables Using Simulations</a> <span class="co">by Aratrika Patnaik and Isha BK (2026)</span>
+            <span class="desc">A tutorial for readers new to econometrics that uses simulated data to show why OLS is biased and how IV corrects it.</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>&copy; 2026 Parush Arora</span>
+      <span>Ashoka University, Sonipat, India</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -126,6 +126,8 @@ h2::after {
 }
 .papers a.t:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .papers .co { color: var(--muted); }
+.papers .desc { display: block; color: var(--muted); font-size: 15px; margin-top: 2px; }
+section > .lede { margin: 0 0 10px; }
 .tag {
   display: inline-block; vertical-align: 1px; margin-left: 4px;
   font-size: 12px; font-weight: 500; line-height: 1.4;
