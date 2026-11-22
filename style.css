@@ -157,7 +157,14 @@ a.t.mono:hover { color: var(--accent); text-decoration-color: var(--accent); }
   border: 1px solid var(--line); background: var(--surface); border-radius: 8px;
   padding: 22px 24px; margin-bottom: 16px;
 }
-.pkg h3 { margin: 0; font-size: 21px; }
+.pkg h3 { margin: 0; font-size: 21px; font-weight: 500; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.plat {
+  font-family: var(--sans); font-size: 12px; font-weight: 500; line-height: 1.4;
+  padding: 1px 8px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted);
+}
+.impl { border-top: 1px solid var(--line); padding-top: 14px; margin-top: 14px; }
+.impl-label { margin: 0 0 8px; font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.impl .install { margin-bottom: 12px; }
 .pkg .pkg-title { margin: 6px 0 2px; color: var(--text); font-weight: 500; }
 .pkg .pkg-note { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
 .install {
