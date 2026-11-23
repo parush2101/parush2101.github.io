@@ -50,6 +50,40 @@
               <a class="btn" href="https://github.com/RishabhBijani/staggeredGMM_STATA">Source on GitHub</a>
             </div>
           </div>
+          <details class="cite">
+            <summary>How to cite</summary>
+            <ul class="refs">
+              <li><span class="k">Paper</span><span>Arora, P. and R. Bijani (2026). &ldquo;Estimating Treatment Effects under Staggered Timing and Non-Spherical Errors.&rdquo; SSRN Working Paper. <a href="https://doi.org/10.2139/ssrn.6558759">doi:10.2139/ssrn.6558759</a></span></li>
+              <li><span class="k">R</span><span>Bijani, R. and P. Arora (2026). <em>staggeredGMM: GMM Estimation of Treatment Effects Under Staggered Adoption.</em> R package version 0.2.0.</span></li>
+              <li><span class="k">Stata</span><span>Arora, P. and R. Bijani (2026). &ldquo;STAGGEREDGMM: Stata module to perform Generalised Method of Moments Estimation of Treatment Effects under Staggered Adoption.&rdquo; Statistical Software Components S460037, Boston College Department of Economics.</span></li>
+            </ul>
+            <div class="bib">
+              <button class="copy" type="button">Copy BibTeX</button>
+<pre>@unpublished{arora2026staggered,
+  title  = {Estimating Treatment Effects under Staggered Timing and Non-Spherical Errors},
+  author = {Arora, Parush and Bijani, Rishabh},
+  year   = {2026},
+  note   = {SSRN Working Paper},
+  doi    = {10.2139/ssrn.6558759}
+}
+
+@manual{bijani2026staggeredgmm,
+  title  = {staggeredGMM: GMM Estimation of Treatment Effects Under Staggered Adoption},
+  author = {Bijani, Rishabh and Arora, Parush},
+  year   = {2026},
+  note   = {R package version 0.2.0},
+  url    = {https://CRAN.R-project.org/package=staggeredGMM}
+}
+
+@misc{arora2026staggeredgmmstata,
+  title        = {STAGGEREDGMM: Stata module to perform Generalised Method of Moments Estimation of Treatment Effects under Staggered Adoption},
+  author       = {Arora, Parush and Bijani, Rishabh},
+  year         = {2026},
+  howpublished = {Statistical Software Components S460037, Boston College Department of Economics},
+  url          = {https://ideas.repec.org/c/boc/bocode/s460037.html}
+}</pre>
+            </div>
+          </details>
         </div>
         <div class="pkg">
           <h3 class="mono">phdid <span class="plat">R</span></h3>
@@ -63,6 +97,32 @@
               <a class="btn" href="https://cran.r-project.org/web/packages/phdid/phdid.pdf">Reference manual</a>
             </div>
           </div>
+          <details class="cite">
+            <summary>How to cite</summary>
+            <ul class="refs">
+              <li><span class="k">Paper</span><span>Arora, P. and R. Wagle (2026). &ldquo;Partial Homogeneity in Staggered Difference-in-Differences.&rdquo; arXiv:2608.08047. <a href="https://arxiv.org/abs/2608.08047">arxiv.org/abs/2608.08047</a></span></li>
+              <li><span class="k">R</span><span>Wagle, R. and P. Arora (2026). <em>phdid: Partial Homogeneity in Staggered Difference-in-Differences.</em> R package version 0.1.0.</span></li>
+            </ul>
+            <div class="bib">
+              <button class="copy" type="button">Copy BibTeX</button>
+<pre>@misc{arora2026partial,
+  title         = {Partial Homogeneity in Staggered Difference-in-Differences},
+  author        = {Arora, Parush and Wagle, Rohan},
+  year          = {2026},
+  eprint        = {2608.08047},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2608.08047}
+}
+
+@manual{wagle2026phdid,
+  title  = {phdid: Partial Homogeneity in Staggered Difference-in-Differences},
+  author = {Wagle, Rohan and Arora, Parush},
+  year   = {2026},
+  note   = {R package version 0.1.0},
+  url    = {https://CRAN.R-project.org/package=phdid}
+}</pre>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -82,5 +142,14 @@
       <span>Ashoka University, Sonipat, India</span>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll('.cite .copy').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var t = b.nextElementSibling.textContent;
+        var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy BibTeX'; }, 1500); };
+        if (navigator.clipboard) navigator.clipboard.writeText(t).then(done, function () {});
+      });
+    });
+  </script>
 </body>
 </html>
